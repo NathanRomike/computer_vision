@@ -12,6 +12,8 @@
 		8456FD7D1F48F5F900B02B22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8456FD7B1F48F5F900B02B22 /* Main.storyboard */; };
 		8456FD7F1F48F5F900B02B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8456FD7E1F48F5F900B02B22 /* Assets.xcassets */; };
 		8456FD821F48F5F900B02B22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8456FD801F48F5F900B02B22 /* LaunchScreen.storyboard */; };
+		8456FD8E1F48F99F00B02B22 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8456FD8D1F48F99F00B02B22 /* MobileNet.mlmodel */; };
+		8456FD901F48F9F800B02B22 /* MobileNetLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456FD8F1F48F9F800B02B22 /* MobileNetLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		8456FD7E1F48F5F900B02B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8456FD811F48F5F900B02B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8456FD831F48F5F900B02B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8456FD8D1F48F99F00B02B22 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		8456FD8F1F48F9F800B02B22 /* MobileNetLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNetLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		8456FD761F48F5F900B02B22 /* computer_vision */ = {
 			isa = PBXGroup;
 			children = (
+				8456FD8C1F48F97800B02B22 /* models */,
 				8456FD771F48F5F900B02B22 /* AppDelegate.swift */,
 				8456FD791F48F5F900B02B22 /* ViewController.swift */,
 				8456FD7B1F48F5F900B02B22 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				8456FD831F48F5F900B02B22 /* Info.plist */,
 			);
 			path = computer_vision;
+			sourceTree = "<group>";
+		};
+		8456FD8C1F48F97800B02B22 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				8456FD8D1F48F99F00B02B22 /* MobileNet.mlmodel */,
+				8456FD8F1F48F9F800B02B22 /* MobileNetLogic.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8456FD901F48F9F800B02B22 /* MobileNetLogic.swift in Sources */,
 				8456FD7A1F48F5F900B02B22 /* ViewController.swift in Sources */,
 				8456FD781F48F5F900B02B22 /* AppDelegate.swift in Sources */,
+				8456FD8E1F48F99F00B02B22 /* MobileNet.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
